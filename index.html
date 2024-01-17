@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
     <title>Mes clients</title>
 </head>
 
@@ -44,16 +44,31 @@
     }
 </style>
 
-<h1>Mes clients</h1>
+    <h1 style="text-align: center;">Mes clients</h1>
 
-<div class="form-container">
-    <form action="script.js" method="POST">
-        <input type="text" name="nom" placeholder="Nom" class="form-input" required>
-        <input type="text" name="prenom" placeholder="Prénom" class="form-input" required>
-        <input type="email" name="email" placeholder="E-mail" class="form-input" required>
-        <button type="submit" class="submit-button">Ajouter un client</button>
-    </form>
-</div>
+    <div class="form-container">
+        <form action="script.js" method="POST">
+            <input type="text" name="nom" placeholder="Nom" class="form-input" required>
+            <input type="text" name="prenom" placeholder="Prénom" class="form-input" required>
+            <input type="email" name="email" placeholder="E-mail" class="form-input" required>
+            <button type="submit" class="submit-button">Ajouter un client</button>
+        </form>
+    </div>
+
+    <table id="tableClients">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>E-mail</th>
+            <th>Éditer</th>
+            <th>Supprimer</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Les lignes du tableau seront ajoutées ici -->
+        </tbody>
+    </table>
 
 </body>
 

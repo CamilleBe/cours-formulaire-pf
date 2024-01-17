@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Mes clients</title>
+</head>
+
+<body>
+<style>
+    /* Style du formulaire */
+    .form-container {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style des champs du formulaire */
+    .form-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    /* Style du bouton */
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: darkblue;
+    }
+</style>
+
+<h1>Mes clients</h1>
+
+<div class="form-container">
+    <form action="script.js" method="POST">
+        <input type="text" name="nom" placeholder="Nom" class="form-input" required>
+        <input type="text" name="prenom" placeholder="Prénom" class="form-input" required>
+        <input type="email" name="email" placeholder="E-mail" class="form-input" required>
+        <button type="submit" class="submit-button">Ajouter un client</button>
+    </form>
+</div>
+
+</body>
+
+</html>
